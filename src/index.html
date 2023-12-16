@@ -4,8 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat App | Front End</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <script type="module" src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <script type="module" src="js/main.js"></script>
+
 </head>
-<body>
+<body class="d-flex flex-column vh-100">
+    <header class="border-bottom p-2 d-flex justify-content-between">
+        <div>
+            <h2 class="d-flex gap-2 align-items-center">Chat App<i class="chat-icon bi bi-chat-quote-fill"></i></h2>
+        </div>
+        <div id="account">
+            <div id="account details" class="d-none">
+                <div id="user-name">Name</div>
+                <div id="user-email">Email</div>
+                <div id="btn-sign-out">Sign Out</div>
+            </div>
+        </div>
+    </header>
+    <main class="d-flex flex-column flex-grow-1">
+        <div id="output-wrapper" class="border flex-grow-1 pb-2">
+            <div id="output" class="p-2 h-100"></div>
+        </div>
+        <form action="javascript:void(0)" class="border-top d-flex gap-2 p-2">
+            <input class="form-control" id="txt-message" type="text" placeholder="Eg. Hello Guys!">
+            <button class="btn btn-primary" id="btn-send">Send</button>
+        </form>
+    </main>
     
 </body>
 </html>

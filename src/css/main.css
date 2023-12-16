@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto',system-ui, sans-serif;
+}
+
+.chat-icon{
+    color: green;
+}
+
+#account{
+    width: 50px;
+    height: 50px;
+    align-self: center;
+    border-radius: 50%;
+    background-size: contain;
+    cursor: pointer;
+    position: relative;
+    background-color: blue;
+}
+
+#account-details{
+    position: absolute;
+    width: 200px;
+    right: 0;
+    top: calc(100% + 2px);
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    text-align: right;
+    z-index: 100;
+}
+
+#user-name{
+    padding: 10px 10px 0;
+}
+
+#btn-sign-out {    
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#btn-sign-out:hover {
+    background-color: lightgray;
+}
+
+#output::-webkit-scrollbar{
+    width: 8px;
+    height: 8px;
+    background-color: #e0e0e0;
+}
+
+#output::-webkit-scrollbar-thumb{
+    background: rgb(12, 144, 196);
+}
+
+#output {
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+main,
+#output-wrapper{
+    height: 0;
+}
