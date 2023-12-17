@@ -10,6 +10,7 @@ const loginOverlayElm = document.querySelector("#login-overlay");
 const accountElm = document.querySelector("#account");
 const userNameElm = document.querySelector("#user-name");
 const userEmailElm = document.querySelector("#user-email");
+const loaderElm = document.querySelector("#loader");
 const {API_BASE_URL} = process.env;
 
 const provider = new GoogleAuthProvider();
@@ -38,6 +39,7 @@ btnSignOutElm.addEventListener('click', (e) =>{
 
 
 onAuthStateChanged(auth, (loggedUser) =>{
+    loaderElm.classList.add('d-none');
     if(loggedUser){
         user.email = loggedUser.email;
         user.name = loggedUser.displayName;
