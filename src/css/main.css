@@ -15,7 +15,6 @@
     background-size: contain;
     cursor: pointer;
     position: relative;
-    background-color: blue;
 }
 
 #account-details{
@@ -115,6 +114,11 @@ main,
     right: 0;
     top: 50%;
     transform: translate(100%, -50%);
+}
+
+.lbl-name{
+  font-size: 12px;
+  color: green;
 }
 
 .gsi-material-button {
