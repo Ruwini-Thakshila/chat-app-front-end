@@ -3,6 +3,10 @@
     font-family: 'Roboto',system-ui, sans-serif;
 }
 
+body{
+  background-color: rgb(243, 243, 243);
+}
+
 .chat-icon{
     color: green;
 }
@@ -28,12 +32,18 @@
     text-align: right;
     z-index: 100;
 }
-
+#user-email{
+  font-size: 12px;
+}
 #user-name{
     padding: 10px 10px 0;
+    font-weight: bold;
 }
 
-#btn-sign-out {    
+#btn-sign-out {  
+    text-align: center;
+    background-color: rgba(211, 211, 211, 0.459);
+    color: blue;  
     padding: 10px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
